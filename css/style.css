@@ -1,0 +1,277 @@
+<style>
+html {
+    /*    1rem = 16px*/
+    font-size: 1rem;
+}
+
+
+
+.container {
+  opacity: 1;
+  transition: 1s;
+}
+
+  .container-loaded {
+    opacity: 1;
+  }
+
+a:hover {
+  opacity: .9;
+}
+
+
+body {
+  margin: 0px;
+  background-color: white;
+  outline: black
+}
+
+a	{
+  text-decoration: none;
+  color: #6e6e5f;
+}
+
+div.menubar {
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  padding-left: 256px;
+  padding-top: 35px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 20;
+}
+
+.notcurrentpage {
+  opacity: .7;
+}
+
+.currentpage  {
+  opacity: 1;;
+}
+
+
+div.footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  width: 230px;
+  text-align: right;
+  line-height: 20px;
+  color: #6e6e5f;
+  font-size: 16px;
+}
+
+div.sidebio {
+  position: fixed;
+  top: 210px;
+  left: 0px;
+  width: 230px;
+  color: #6e6e5f;
+  text-align: right;
+  line-height: 22px;
+  font-size: 16px;
+    }
+
+div.sidetitle {
+  position: fixed;
+  top: 120px;
+  left: 0px;
+  width: 230px;
+  color: #6e6e5f;
+  text-align: right;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: bold;
+    }
+
+div.sidedate {
+  position: fixed;
+  top: 140px;
+  left: 0px;
+  width: 230px;
+  color: #6e6e5f;
+  text-align: right;
+  line-height: 22px;
+  font-size: 16px;
+    }
+
+div.back {
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  width: 230px;
+  color: #6e6e5f;
+  text-align: right;
+  line-height: 22px;
+  font-size: 16px;
+    }
+
+div.kayaramirez {
+  position: fixed;
+  top: 32px;
+  left: 0px;
+  width: 230px;
+  color: #6e6e5f;
+  text-align: right;
+  line-height: 22px;
+  font-size: 21pt;
+  z-index: 21;
+    }
+
+* {
+  box-sizing: border-box;
+}
+
+
+.grid {
+  
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding-left: 250px;
+  padding-top: 70px;
+  padding-right: 10px;
+  padding-bottom: 17px;
+}
+
+
+.item {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 6px;
+  transition: opacity 2s;
+}
+
+.aboutitem {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  padding: 6px;
+  transition: opacity 2s;
+}
+
+.item img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+  .portraititemsquare {
+    z-index: -10;
+    position: relative;
+      max-width: 80vh;
+    padding-bottom: 20px;
+    padding-left: 6px;
+    padding-top: 6px;
+  }
+
+  .portraititem {
+    z-index: -10;
+    position: relative;
+      max-width: 110vh;
+    padding-bottom: 20px;
+    padding-left: 6px;
+  }
+
+  .portraititemfirst {
+    z-index: -10;
+    position: relative;
+      max-width: 110vh;
+    padding-bottom: 20px;
+    padding-left: 6px;
+    padding-top: 6px;
+  }
+
+
+
+  @media screen and (max-width: 414px) {
+.sidetitle,.sidebio,.sidedate,.footer {display: none;}
+.grid {
+padding-left: 10px;
+padding-right: 0px;
+  }
+.item {
+-ms-flex: 100%;
+flex: 100%;
+max-width: 100%; }
+.menubar {
+padding-left: 10px; }
+  }
+
+
+  @media screen and (max-height: 410px) {
+    .footer { opacity: .9;}
+  }
+    @media screen and (max-height: 409px) {
+      .footer { opacity: .8;}
+    }
+      @media screen and (max-height: 408px) {
+        .footer { opacity: .7;}
+      }
+          @media screen and (max-height: 407px) {
+          .footer { opacity: .6;}
+        }
+          @media screen and (max-height: 406px) {
+            .footer { opacity: .5;}
+          }
+            @media screen and (max-height: 405px) {
+              .footer { opacity: .4;}
+            }
+              @media screen and (max-height: 404px) {
+                .footer { opacity: .3;}
+              }
+                @media screen and (max-height: 403px) {
+                  .footer { opacity: .2;}
+                }
+                  @media screen and (max-height: 402px) {
+                    .footer { opacity: .1;}
+                  }
+                    @media screen and (max-height: 401px) {
+                      .footer { opacity: .05;}
+                    }
+                        @media screen and (max-height: 400px) {
+                        .footer { opacity: .0;}
+                      }
+                        @media screen and (max-width: 400px) {
+                          .footer { font-size: 0px;}
+                        }
+
+
+
+@media screen and (max-width: 1100px) {
+  .item {
+    -ms-flex: 33.333%;
+    flex: 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .item {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two items stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .item {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+</style>
